@@ -1,4 +1,7 @@
-option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figura geometrica que elijas: \n 1. Cuadrado. \n 2. Rectangulo. \n 3. Triangulo. \n 0.Salir")
+let option;
+
+while (option != 0) {
+    option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figura geometrica que elijas: \n 1. Cuadrado. \n 2. Rectangulo. \n 3. Triangulo. \n 0.Salir")
 
     if (option == 1) {      
         let lado = Number (prompt ("Ingrese la longitud del lado del cuadrado: "));
@@ -22,7 +25,10 @@ option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figur
             let areaTriangulo = (base * altura) / 2;
             alert ("El Perimetro del Triangulo es de " + perimetroTriangulo + "cm.");
             alert("El Area del Triangulo es de " + areaTriangulo + "cm2");
-            }
-    else (option == 0); { 
-        alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva pronto!!")
-    }
+            } else if (option == 0) {
+                alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva Pronto!");
+                }
+            else {
+                alert ("No has ingresado una opcion valida.")
+            }
+}
