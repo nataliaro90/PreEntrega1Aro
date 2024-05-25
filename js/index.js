@@ -26,4 +26,3 @@ option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figur
     else (option == 0); { 
         alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva pronto!!")
     }
-   
