@@ -69,12 +69,11 @@ while (option != 0) {
             break;
         case '0':
             alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva Pronto!");
+            break;
         default:
             alert ("No has ingresado una opcion valida.");
             break;
     }
 }
-
-
 
 
