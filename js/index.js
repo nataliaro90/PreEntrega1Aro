@@ -37,7 +37,7 @@ while (option != 0) {
 
 // MISMO PROYECTO CON SWITH
 
-let option;
+/*let option;
 
 while (option != 0) {
     option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figura geometrica que elijas: \n 1. Cuadrado. \n 2. Rectangulo. \n 3. Triangulo. \n 0.Salir")
@@ -66,6 +66,49 @@ while (option != 0) {
             let areaTriangulo = (base2 * altura2) / 2;
             alert ("El Perimetro del Triangulo es de " + perimetroTriangulo + "cm.");
             alert("El Area del Triangulo es de " + areaTriangulo + "cm2");
+            break;
+        case '0':
+            alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva Pronto!");
+            break;
+        default:
+            alert ("No has ingresado una opcion valida.");
+            break;
+    }
+} */
+
+// Incorportando Funciones
+
+let option;
+function cuadrado(lado) {
+    let perimetroCuadrado = lado * 4 ;
+    let areaCuadrado = lado * lado;
+    alert ("El Perimetro del Cuadrado es de" + perimetroCuadrado + "cm.");
+    alert ("El Area del Cuadrado es de" + areaCuadrado + "cm2");
+}
+function rectangulo(base, altura) {
+    let perimetroRectangulo = (2 * base) + (2 *    altura) ;
+    let areaRectangulo = base * altura;
+    alert ("El Perimetro del Rectangulo es de " +   perimetroRectangulo + "cm.");
+    alert("El Area del Rectangulo es de " +     areaRectangulo + "cm2");
+}
+function triangulo (base, lado1, lado2, altura) {
+    let perimetroTriangulo = base + lado1 + lado2;
+    let areaTriangulo = (base * altura) / 2;
+    alert ("El Perimetro del Triangulo es de" + perimetroTriangulo + "cm.");
+    alert("El Area del Triangulo es de " + areaTriangulo + "cm2");
+}
+
+while (option != 0) {
+    option = prompt ("Bienvenido!! Vamos a calcular el Area y Perímetro de la figura geometrica que elijas: \n 1. Cuadrado. \n 2. Rectangulo. \n 3. Triangulo. \n 0.Salir")
+    switch (option) {
+        case '1':  
+            cuadrado (Number (prompt ("Ingrese la longitud del lado del cuadrado: ")));
+            break;
+        case '2': 
+            rectangulo (Number (prompt ("Ingrese la base del rectangulo: ")), Number (prompt ("Ingrese la altura del    rectandulo: ")));
+            break;
+        case '3':
+            triangulo (Number (prompt ("Ingrese la base del triangulo: ")), Number (prompt ("Ingrese longitud de un lado del triangulo: ")), Number (prompt ("Ingrese longitud del otro lado del triangulo")),Number (prompt ("Ingresla altura del triangulo: ")));
             break;
         case '0':
             alert ("Gracias por utilizar nuestro calculador de perimetros y areas, ¡Vuelva Pronto!");
