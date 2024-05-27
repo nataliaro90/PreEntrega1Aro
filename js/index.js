@@ -79,19 +79,19 @@ while (option != 0) {
 // Incorportando Funciones
 
 let option;
-function cuadrado(lado) {
-    let perimetroCuadrado = lado * 4 ;
+let cuadrado = (lado) => {
+    let perimetroCuadrado = lado * 4;
     let areaCuadrado = lado * lado;
     alert ("El Perimetro del Cuadrado es de" + perimetroCuadrado + "cm.");
     alert ("El Area del Cuadrado es de" + areaCuadrado + "cm2");
 }
-function rectangulo(base, altura) {
-    let perimetroRectangulo = (2 * base) + (2 *    altura) ;
+let rectangulo = (base, altura) => {
+    let perimetroRectangulo = (2 * base) + (2 * altura) ;
     let areaRectangulo = base * altura;
-    alert ("El Perimetro del Rectangulo es de " +   perimetroRectangulo + "cm.");
-    alert("El Area del Rectangulo es de " +     areaRectangulo + "cm2");
+    alert ("El Perimetro del Rectangulo es de " + perimetroRectangulo + "cm.");
+    alert("El Area del Rectangulo es de " + areaRectangulo + "cm2");
 }
-function triangulo (base, lado1, lado2, altura) {
+let triangulo = (base, lado1, lado2, altura) => {
     let perimetroTriangulo = base + lado1 + lado2;
     let areaTriangulo = (base * altura) / 2;
     alert ("El Perimetro del Triangulo es de" + perimetroTriangulo + "cm.");
